@@ -1,0 +1,8 @@
+version: 2
+ jobs:
+   build:
+     docker:
+       - image: Ubuntu:18.04
+     steps:
+       - checkout
+       - run: docker build -t kitware/fletch:test .
